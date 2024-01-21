@@ -23,6 +23,21 @@ nodes:
 - role: control-plane
 - role: worker
 - role: worker
+==================OR=========================This script is taken from Medium
+vi config.yml
+
+# 4 node (3 workers) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
 
 ============create kind cluster============
 
